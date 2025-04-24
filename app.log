@@ -1,0 +1,35 @@
+2025-04-22 23:08:09,576 - main - INFO - Processing alert ALT123456 for ISIN DE0007664039
+2025-04-22 23:08:09,576 - agents.agent_factory - INFO - Processing alert ALT123456
+2025-04-22 23:08:09,577 - agents.agent_factory - ERROR - Error in agent processing: GroupChatManager.run_chat() got an unexpected keyword argument 'message'
+Traceback (most recent call last):
+  File "/home/renjithvs/ampcome/projects/ubs_agent/agents/agent_factory.py", line 130, in process_alert
+    result = await self.manager.run_chat(self.human_agent, message=message)
+TypeError: GroupChatManager.run_chat() got an unexpected keyword argument 'message'
+2025-04-22 23:12:18,368 - main - INFO - Processing alert ALT123456 for ISIN DE0007664039
+2025-04-22 23:12:18,368 - agents.agent_factory - INFO - Processing alert ALT123456
+2025-04-22 23:12:20,613 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:23,491 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:24,256 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:30,494 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:31,746 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:38,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:40,013 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:40,848 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:41,581 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:42,274 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:42,961 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:12:43,658 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-22 23:39:40,950 - main - INFO - Processing alert ALT123456 for ISIN DE0007664039
+2025-04-22 23:39:40,954 - agents.agent_factory - INFO - Processing alert ALT123456
+2025-04-22 23:39:52,245 - main - INFO - Processing alert ALT123456 for ISIN DE0007664039
+2025-04-22 23:39:52,245 - agents.agent_factory - INFO - Processing alert ALT123456
+2025-04-22 23:40:15,440 - main - INFO - Processing alert ALT123456 for ISIN DE0007664039
+2025-04-22 23:40:15,441 - agents.agent_factory - INFO - Processing alert ALT123456
+2025-04-23 10:29:44,011 - main - INFO - Processing alert ALT123456 for ISIN DE0007664039
+2025-04-23 10:29:44,012 - agents.agent_factory - INFO - Processing alert ALT123456
+2025-04-23 17:44:19,575 - main - INFO - Processing alert ALT123456 for ISIN DE0007664039
+2025-04-23 17:44:19,576 - main - ERROR - Error processing alert: 'AgentSystem' object has no attribute 'process_alert'
+Traceback (most recent call last):
+  File "/home/renjithvs/ampcome/projects/ubs_agent/main.py", line 78, in process_alert
+    result = await agent_system.process_alert(alert_obj)
+AttributeError: 'AgentSystem' object has no attribute 'process_alert'
